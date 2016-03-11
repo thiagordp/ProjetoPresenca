@@ -1,0 +1,14 @@
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\ProjetoPresenca.exe.config
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\ProjetoPresenca.exe
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\ProjetoPresenca.pdb
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\Modelos.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\RegraNegocio.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\EntityFramework.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\Modelos.pdb
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\RegraNegocio.pdb
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\EntityFramework.xml
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\obj\Debug\Interface.csprojResolveAssemblyReference.cache
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\obj\Debug\ProjetoPresenca.Properties.Resources.resources
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\obj\Debug\Interface.csproj.GenerateResource.Cache
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\obj\Debug\ProjetoPresenca.exe
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\obj\Debug\ProjetoPresenca.pdb

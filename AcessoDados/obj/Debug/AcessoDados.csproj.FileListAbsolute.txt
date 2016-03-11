@@ -1,0 +1,9 @@
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\AcessoDados.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\AcessoDados.pdb
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\Modelos.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\EntityFramework.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\Modelos.pdb
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\EntityFramework.xml
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\obj\Debug\AcessoDados.csprojResolveAssemblyReference.cache
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\obj\Debug\AcessoDados.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\obj\Debug\AcessoDados.pdb

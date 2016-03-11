@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ListaPresencaModelStoreContainer" CdmEntityContainer="Contexto">
+    <EntitySetMapping Name="Aluno">
+      <EntityTypeMapping TypeName="ListaPresencaModel.Aluno">
+        <MappingFragment StoreEntitySet="Aluno">
+          <ScalarProperty Name="CODIGO_ALUNO" ColumnName="CODIGO_ALUNO" />
+          <ScalarProperty Name="NOME_ALUNO" ColumnName="NOME_ALUNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Datahora">
+      <EntityTypeMapping TypeName="ListaPresencaModel.Datahora">
+        <MappingFragment StoreEntitySet="Datahora">
+          <ScalarProperty Name="DIA" ColumnName="DIA" />
+          <ScalarProperty Name="HORA" ColumnName="HORA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Disciplina">
+      <EntityTypeMapping TypeName="ListaPresencaModel.Disciplina">
+        <MappingFragment StoreEntitySet="Disciplina">
+          <ScalarProperty Name="CODIGO_DISCIPLINA" ColumnName="CODIGO_DISCIPLINA" />
+          <ScalarProperty Name="NOME_DISCIPLINA" ColumnName="NOME_DISCIPLINA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DisciplinaTurma">
+      <EntityTypeMapping TypeName="ListaPresencaModel.DisciplinaTurma">
+        <MappingFragment StoreEntitySet="DisciplinaTurma">
+          <ScalarProperty Name="SEQ_DISCIPLINA_TURMA" ColumnName="SEQ_DISCIPLINA_TURMA" />
+          <ScalarProperty Name="CODIGO_DISCIPLINA" ColumnName="CODIGO_DISCIPLINA" />
+          <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
+          <ScalarProperty Name="CODIGO_SEMESTRE" ColumnName="CODIGO_SEMESTRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Semestre">
+      <EntityTypeMapping TypeName="ListaPresencaModel.Semestre">
+        <MappingFragment StoreEntitySet="Semestre">
+          <ScalarProperty Name="CODIGO_SEMESTRE" ColumnName="CODIGO_SEMESTRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Turma">
+      <EntityTypeMapping TypeName="ListaPresencaModel.Turma">
+        <MappingFragment StoreEntitySet="Turma">
+          <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AlunoTurma" TypeName="ListaPresencaModel.AlunoTurma" StoreEntitySet="AlunoTurma">
+      <EndProperty Name="Aluno">
+        <ScalarProperty Name="CODIGO_ALUNO" ColumnName="CODIGO_ALUNO" />
+      </EndProperty>
+      <EndProperty Name="DisciplinaTurma">
+        <ScalarProperty Name="SEQ_DISCIPLINA_TURMA" ColumnName="SEQ_DISCIPLINA_TURMA" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TurmaHora" TypeName="ListaPresencaModel.TurmaHora" StoreEntitySet="TurmaHora">
+      <EndProperty Name="Datahora">
+        <ScalarProperty Name="DIA" ColumnName="DIA" />
+        <ScalarProperty Name="HORA" ColumnName="HORA" />
+      </EndProperty>
+      <EndProperty Name="DisciplinaTurma">
+        <ScalarProperty Name="SEQ_DISCIPLINA_TURMA" ColumnName="SEQ_DISCIPLINA_TURMA" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ListaPresencaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Aluno">
+    <Key>
+      <PropertyRef Name="CODIGO_ALUNO" />
+    </Key>
+    <Property Name="CODIGO_ALUNO" Type="Int32" Nullable="false" />
+    <Property Name="NOME_ALUNO" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DisciplinaTurma" Relationship="Self.AlunoTurma" FromRole="Aluno" ToRole="DisciplinaTurma" />
+  </EntityType>
+  <EntityType Name="Datahora">
+    <Key>
+      <PropertyRef Name="DIA" />
+      <PropertyRef Name="HORA" />
+    </Key>
+    <Property Name="DIA" Type="Int32" Nullable="false" />
+    <Property Name="HORA" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DisciplinaTurma" Relationship="Self.TurmaHora" FromRole="Datahora" ToRole="DisciplinaTurma" />
+  </EntityType>
+  <EntityType Name="Disciplina">
+    <Key>
+      <PropertyRef Name="CODIGO_DISCIPLINA" />
+    </Key>
+    <Property Name="CODIGO_DISCIPLINA" Type="Int32" Nullable="false" />
+    <Property Name="NOME_DISCIPLINA" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DisciplinaTurma" Relationship="Self.FK__Disciplin__CODIG__1A14E395" FromRole="Disciplina" ToRole="DisciplinaTurma" />
+  </EntityType>
+  <EntityType Name="DisciplinaTurma">
+    <Key>
+      <PropertyRef Name="SEQ_DISCIPLINA_TURMA" />
+    </Key>
+    <Property Name="SEQ_DISCIPLINA_TURMA" Type="Int32" Nullable="false" />
+    <Property Name="CODIGO_DISCIPLINA" Type="Int32" />
+    <Property Name="CODIGO_TURMA" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="CODIGO_SEMESTRE" Type="Int32" />
+    <NavigationProperty Name="Disciplina" Relationship="Self.FK__Disciplin__CODIG__1A14E395" FromRole="DisciplinaTurma" ToRole="Disciplina" />
+    <NavigationProperty Name="Turma" Relationship="Self.FK__Disciplin__CODIG__1B0907CE" FromRole="DisciplinaTurma" ToRole="Turma" />
+    <NavigationProperty Name="Semestre" Relationship="Self.FK__Disciplin__CODIG__239E4DCF" FromRole="DisciplinaTurma" ToRole="Semestre" />
+    <NavigationProperty Name="Aluno" Relationship="Self.AlunoTurma" FromRole="DisciplinaTurma" ToRole="Aluno" />
+    <NavigationProperty Name="Datahora" Relationship="Self.TurmaHora" FromRole="DisciplinaTurma" ToRole="Datahora" />
+  </EntityType>
+  <EntityType Name="Semestre">
+    <Key>
+      <PropertyRef Name="CODIGO_SEMESTRE" />
+    </Key>
+    <Property Name="CODIGO_SEMESTRE" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DisciplinaTurma" Relationship="Self.FK__Disciplin__CODIG__239E4DCF" FromRole="Semestre" ToRole="DisciplinaTurma" />
+  </EntityType>
+  <EntityType Name="Turma">
+    <Key>
+      <PropertyRef Name="CODIGO_TURMA" />
+    </Key>
+    <Property Name="CODIGO_TURMA" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DisciplinaTurma" Relationship="Self.FK__Disciplin__CODIG__1B0907CE" FromRole="Turma" ToRole="DisciplinaTurma" />
+  </EntityType>
+  <Association Name="FK__Disciplin__CODIG__1A14E395">
+    <End Role="Disciplina" Type="Self.Disciplina" Multiplicity="0..1" />
+    <End Role="DisciplinaTurma" Type="Self.DisciplinaTurma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Disciplina">
+        <PropertyRef Name="CODIGO_DISCIPLINA" />
+      </Principal>
+      <Dependent Role="DisciplinaTurma">
+        <PropertyRef Name="CODIGO_DISCIPLINA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Disciplin__CODIG__1B0907CE">
+    <End Role="Turma" Type="Self.Turma" Multiplicity="0..1" />
+    <End Role="DisciplinaTurma" Type="Self.DisciplinaTurma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turma">
+        <PropertyRef Name="CODIGO_TURMA" />
+      </Principal>
+      <Dependent Role="DisciplinaTurma">
+        <PropertyRef Name="CODIGO_TURMA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Disciplin__CODIG__239E4DCF">
+    <End Role="Semestre" Type="Self.Semestre" Multiplicity="0..1" />
+    <End Role="DisciplinaTurma" Type="Self.DisciplinaTurma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Semestre">
+        <PropertyRef Name="CODIGO_SEMESTRE" />
+      </Principal>
+      <Dependent Role="DisciplinaTurma">
+        <PropertyRef Name="CODIGO_SEMESTRE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AlunoTurma">
+    <End Role="Aluno" Type="Self.Aluno" Multiplicity="*" />
+    <End Role="DisciplinaTurma" Type="Self.DisciplinaTurma" Multiplicity="*" />
+  </Association>
+  <Association Name="TurmaHora">
+    <End Role="Datahora" Type="Self.Datahora" Multiplicity="*" />
+    <End Role="DisciplinaTurma" Type="Self.DisciplinaTurma" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="Contexto" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Aluno" EntityType="Self.Aluno" />
+    <EntitySet Name="Datahora" EntityType="Self.Datahora" />
+    <EntitySet Name="Disciplina" EntityType="Self.Disciplina" />
+    <EntitySet Name="DisciplinaTurma" EntityType="Self.DisciplinaTurma" />
+    <EntitySet Name="Semestre" EntityType="Self.Semestre" />
+    <EntitySet Name="Turma" EntityType="Self.Turma" />
+    <AssociationSet Name="FK__Disciplin__CODIG__1A14E395" Association="Self.FK__Disciplin__CODIG__1A14E395">
+      <End Role="Disciplina" EntitySet="Disciplina" />
+      <End Role="DisciplinaTurma" EntitySet="DisciplinaTurma" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Disciplin__CODIG__1B0907CE" Association="Self.FK__Disciplin__CODIG__1B0907CE">
+      <End Role="Turma" EntitySet="Turma" />
+      <End Role="DisciplinaTurma" EntitySet="DisciplinaTurma" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Disciplin__CODIG__239E4DCF" Association="Self.FK__Disciplin__CODIG__239E4DCF">
+      <End Role="Semestre" EntitySet="Semestre" />
+      <End Role="DisciplinaTurma" EntitySet="DisciplinaTurma" />
+    </AssociationSet>
+    <AssociationSet Name="AlunoTurma" Association="Self.AlunoTurma">
+      <End Role="Aluno" EntitySet="Aluno" />
+      <End Role="DisciplinaTurma" EntitySet="DisciplinaTurma" />
+    </AssociationSet>
+    <AssociationSet Name="TurmaHora" Association="Self.TurmaHora">
+      <End Role="Datahora" EntitySet="Datahora" />
+      <End Role="DisciplinaTurma" EntitySet="DisciplinaTurma" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
