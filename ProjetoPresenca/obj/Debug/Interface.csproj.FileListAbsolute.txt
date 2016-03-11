@@ -12,3 +12,8 @@ D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\obj\Debug\ProjetoPr
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\obj\Debug\Interface.csproj.GenerateResource.Cache
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\obj\Debug\ProjetoPresenca.exe
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\obj\Debug\ProjetoPresenca.pdb
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\AcessoDados.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\AcessoDados.pdb
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\obj\Debug\ProjetoPresenca.Form1.resources

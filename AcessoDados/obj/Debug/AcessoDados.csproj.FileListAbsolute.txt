@@ -7,3 +7,6 @@ D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\EntityFramewo
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\obj\Debug\AcessoDados.csprojResolveAssemblyReference.cache
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\obj\Debug\AcessoDados.dll
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\obj\Debug\AcessoDados.pdb
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\AcessoDados.dll.config
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\EntityFramework.SqlServer.xml

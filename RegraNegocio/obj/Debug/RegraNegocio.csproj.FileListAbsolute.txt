@@ -9,3 +9,6 @@ D:\Projetos\C#\ListaPresenca\ProjetoPresenca\RegraNegocio\bin\Debug\EntityFramew
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\RegraNegocio\obj\Debug\RegraNegocio.csprojResolveAssemblyReference.cache
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\RegraNegocio\obj\Debug\RegraNegocio.dll
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\RegraNegocio\obj\Debug\RegraNegocio.pdb
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\RegraNegocio\bin\Debug\RegraNegocio.dll.config
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\RegraNegocio\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\RegraNegocio\bin\Debug\EntityFramework.SqlServer.xml

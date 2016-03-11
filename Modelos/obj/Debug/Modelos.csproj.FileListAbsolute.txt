@@ -5,6 +5,6 @@ D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\bin\Debug\EntityFramework.d
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\bin\Debug\EntityFramework.xml
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\bin\Debug\EntityFramework.SqlServer.xml
-D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\obj\Debug\Modelos.csprojResolveAssemblyReference.cache
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\obj\Debug\Modelos.dll
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\obj\Debug\Modelos.pdb
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\obj\Debug\Modelos.csprojResolveAssemblyReference.cache

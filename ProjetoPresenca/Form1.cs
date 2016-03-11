@@ -16,5 +16,18 @@ namespace ProjetoPresenca
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RegraNegocio.MontagemRegraNegocio montagem = new RegraNegocio.MontagemRegraNegocio();
+            try
+            {
+                montagem.Teste();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + "\n\n" + ex.InnerException);
+            }
+        }
     }
 }

@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace RegraNegocio
 {
-    class MontagemRegraNegocio
+    public class MontagemRegraNegocio
     {
+        AcessoDados.BancoAcessoDados banco = new AcessoDados.BancoAcessoDados();
+
+        public void Teste()
+        {
+            try
+            {
+                banco.Teste();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+           
+        }
     }
 }
