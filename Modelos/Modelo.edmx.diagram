@@ -4,19 +4,21 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f5ea7083cc84451085ea7579ef908a66" Name="Diagram1" DisplayType="true">
-        <EntityTypeShape EntityType="ListaPresencaModel.Aluno" Width="1.5" PointX="0.875" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="ListaPresencaModel.Datahora" Width="1.5" PointX="0.875" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ListaPresencaModel.Disciplina" Width="1.5" PointX="5.75" PointY="2.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ListaPresencaModel.DisciplinaTurma" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="ListaPresencaModel.Semestre" Width="1.5" PointX="3.125" PointY="4.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ListaPresencaModel.Turma" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="ListaPresencaModel.FK__Disciplin__CODIG__1A14E395" ManuallyRouted="false" />
-        <AssociationConnector Association="ListaPresencaModel.FK__Disciplin__CODIG__1B0907CE" ManuallyRouted="false" />
-        <AssociationConnector Association="ListaPresencaModel.FK__Disciplin__CODIG__239E4DCF" ManuallyRouted="false" ></AssociationConnector>
-        <AssociationConnector Association="ListaPresencaModel.AlunoTurma" ManuallyRouted="false" />
-        <AssociationConnector Association="ListaPresencaModel.TurmaHora" ManuallyRouted="false" >
-        </AssociationConnector>
+      <Diagram DiagramId="55dbd5287ea84a54a49f0047f350fe78" Name="Diagram1">
+        <EntityTypeShape EntityType="ListaPresencaModelo.Aluno" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ListaPresencaModelo.Datahora" Width="1.5" PointX="8.625" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ListaPresencaModelo.Disciplina" Width="1.5" PointX="0.875" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ListaPresencaModelo.DisciplinaTurma" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ListaPresencaModelo.Professor" Width="1.5" PointX="8.625" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ListaPresencaModelo.Semestre" Width="1.5" PointX="5.625" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ListaPresencaModelo.Turma" Width="1.5" PointX="3.125" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ListaPresencaModelo.TurmaHora" Width="1.5" PointX="6" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="ListaPresencaModelo.FK__TurmaHora__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="ListaPresencaModelo.FK__Disciplin__CODIG__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="ListaPresencaModelo.FK__Disciplin__CODIG__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="ListaPresencaModelo.FK__Disciplin__CODIG__239E4DCF" ManuallyRouted="false" />
+        <AssociationConnector Association="ListaPresencaModelo.FK__TurmaHora__SEQ_D__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="ListaPresencaModelo.AlunoTurma" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

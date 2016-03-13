@@ -17,8 +17,8 @@ namespace Modelos
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public DisciplinaTurma()
         {
+            this.TurmaHora = new HashSet<TurmaHora>();
             this.Aluno = new HashSet<Aluno>();
-            this.Datahora = new HashSet<Datahora>();
         }
     
         public int SEQ_DISCIPLINA_TURMA { get; set; }
@@ -30,8 +30,8 @@ namespace Modelos
         public virtual Turma Turma { get; set; }
         public virtual Semestre Semestre { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Aluno> Aluno { get; set; }
+        public virtual ICollection<TurmaHora> TurmaHora { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Datahora> Datahora { get; set; }
+        public virtual ICollection<Aluno> Aluno { get; set; }
     }
 }

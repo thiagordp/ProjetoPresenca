@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="ListaPresencaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="ListaPresencaModelo.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="Aluno">
     <Key>
       <PropertyRef Name="CODIGO_ALUNO" />
@@ -39,6 +39,13 @@
     <Property Name="CODIGO_TURMA" Type="varchar" MaxLength="6" />
     <Property Name="CODIGO_SEMESTRE" Type="int" />
   </EntityType>
+  <EntityType Name="Professor">
+    <Key>
+      <PropertyRef Name="CODIGO_PROFESSOR" />
+    </Key>
+    <Property Name="CODIGO_PROFESSOR" Type="int" Nullable="false" />
+    <Property Name="NOME_PROFESSOR" Type="varchar" MaxLength="200" />
+  </EntityType>
   <EntityType Name="Semestre">
     <Key>
       <PropertyRef Name="CODIGO_SEMESTRE" />
@@ -60,8 +67,9 @@
     <Property Name="SEQ_DISCIPLINA_TURMA" Type="int" Nullable="false" />
     <Property Name="DIA" Type="int" Nullable="false" />
     <Property Name="HORA" Type="int" Nullable="false" />
+    <Property Name="CODIGO_ESPACO" Type="varchar" MaxLength="7" />
   </EntityType>
-  <Association Name="FK__AlunoTurm__CODIG__22AA2996">
+  <Association Name="FK__AlunoTurm__CODIG__1FCDBCEB">
     <End Role="Aluno" Type="Self.Aluno" Multiplicity="1" />
     <End Role="AlunoTurma" Type="Self.AlunoTurma" Multiplicity="*" />
     <ReferentialConstraint>
@@ -73,7 +81,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__AlunoTurm__SEQ_D__21B6055D">
+  <Association Name="FK__AlunoTurm__SEQ_D__20C1E124">
     <End Role="DisciplinaTurma" Type="Self.DisciplinaTurma" Multiplicity="1" />
     <End Role="AlunoTurma" Type="Self.AlunoTurma" Multiplicity="*" />
     <ReferentialConstraint>
@@ -85,7 +93,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Disciplin__CODIG__1A14E395">
+  <Association Name="FK__Disciplin__CODIG__21B6055D">
     <End Role="Disciplina" Type="Self.Disciplina" Multiplicity="0..1" />
     <End Role="DisciplinaTurma" Type="Self.DisciplinaTurma" Multiplicity="*" />
     <ReferentialConstraint>
@@ -97,7 +105,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Disciplin__CODIG__1B0907CE">
+  <Association Name="FK__Disciplin__CODIG__22AA2996">
     <End Role="Turma" Type="Self.Turma" Multiplicity="0..1" />
     <End Role="DisciplinaTurma" Type="Self.DisciplinaTurma" Multiplicity="*" />
     <ReferentialConstraint>
@@ -121,7 +129,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__TurmaHora__20C1E124">
+  <Association Name="FK__TurmaHora__24927208">
     <End Role="Datahora" Type="Self.Datahora" Multiplicity="1" />
     <End Role="TurmaHora" Type="Self.TurmaHora" Multiplicity="*" />
     <ReferentialConstraint>
@@ -135,7 +143,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__TurmaHora__SEQ_D__1FCDBCEB">
+  <Association Name="FK__TurmaHora__SEQ_D__25869641">
     <End Role="DisciplinaTurma" Type="Self.DisciplinaTurma" Multiplicity="1" />
     <End Role="TurmaHora" Type="Self.TurmaHora" Multiplicity="*" />
     <ReferentialConstraint>
@@ -147,28 +155,29 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="ListaPresencaModelStoreContainer">
+  <EntityContainer Name="ListaPresencaModeloStoreContainer">
     <EntitySet Name="Aluno" EntityType="Self.Aluno" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="AlunoTurma" EntityType="Self.AlunoTurma" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Datahora" EntityType="Self.Datahora" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Disciplina" EntityType="Self.Disciplina" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DisciplinaTurma" EntityType="Self.DisciplinaTurma" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Professor" EntityType="Self.Professor" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Semestre" EntityType="Self.Semestre" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Turma" EntityType="Self.Turma" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TurmaHora" EntityType="Self.TurmaHora" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__AlunoTurm__CODIG__22AA2996" Association="Self.FK__AlunoTurm__CODIG__22AA2996">
+    <AssociationSet Name="FK__AlunoTurm__CODIG__1FCDBCEB" Association="Self.FK__AlunoTurm__CODIG__1FCDBCEB">
       <End Role="Aluno" EntitySet="Aluno" />
       <End Role="AlunoTurma" EntitySet="AlunoTurma" />
     </AssociationSet>
-    <AssociationSet Name="FK__AlunoTurm__SEQ_D__21B6055D" Association="Self.FK__AlunoTurm__SEQ_D__21B6055D">
+    <AssociationSet Name="FK__AlunoTurm__SEQ_D__20C1E124" Association="Self.FK__AlunoTurm__SEQ_D__20C1E124">
       <End Role="DisciplinaTurma" EntitySet="DisciplinaTurma" />
       <End Role="AlunoTurma" EntitySet="AlunoTurma" />
     </AssociationSet>
-    <AssociationSet Name="FK__Disciplin__CODIG__1A14E395" Association="Self.FK__Disciplin__CODIG__1A14E395">
+    <AssociationSet Name="FK__Disciplin__CODIG__21B6055D" Association="Self.FK__Disciplin__CODIG__21B6055D">
       <End Role="Disciplina" EntitySet="Disciplina" />
       <End Role="DisciplinaTurma" EntitySet="DisciplinaTurma" />
     </AssociationSet>
-    <AssociationSet Name="FK__Disciplin__CODIG__1B0907CE" Association="Self.FK__Disciplin__CODIG__1B0907CE">
+    <AssociationSet Name="FK__Disciplin__CODIG__22AA2996" Association="Self.FK__Disciplin__CODIG__22AA2996">
       <End Role="Turma" EntitySet="Turma" />
       <End Role="DisciplinaTurma" EntitySet="DisciplinaTurma" />
     </AssociationSet>
@@ -176,11 +185,11 @@
       <End Role="Semestre" EntitySet="Semestre" />
       <End Role="DisciplinaTurma" EntitySet="DisciplinaTurma" />
     </AssociationSet>
-    <AssociationSet Name="FK__TurmaHora__20C1E124" Association="Self.FK__TurmaHora__20C1E124">
+    <AssociationSet Name="FK__TurmaHora__24927208" Association="Self.FK__TurmaHora__24927208">
       <End Role="Datahora" EntitySet="Datahora" />
       <End Role="TurmaHora" EntitySet="TurmaHora" />
     </AssociationSet>
-    <AssociationSet Name="FK__TurmaHora__SEQ_D__1FCDBCEB" Association="Self.FK__TurmaHora__SEQ_D__1FCDBCEB">
+    <AssociationSet Name="FK__TurmaHora__SEQ_D__25869641" Association="Self.FK__TurmaHora__SEQ_D__25869641">
       <End Role="DisciplinaTurma" EntitySet="DisciplinaTurma" />
       <End Role="TurmaHora" EntitySet="TurmaHora" />
     </AssociationSet>

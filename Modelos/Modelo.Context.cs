@@ -29,7 +29,9 @@ namespace Modelos
         public virtual DbSet<Datahora> Datahora { get; set; }
         public virtual DbSet<Disciplina> Disciplina { get; set; }
         public virtual DbSet<DisciplinaTurma> DisciplinaTurma { get; set; }
+        public virtual DbSet<Professor> Professor { get; set; }
         public virtual DbSet<Semestre> Semestre { get; set; }
         public virtual DbSet<Turma> Turma { get; set; }
+        public virtual DbSet<TurmaHora> TurmaHora { get; set; }
     }
 }

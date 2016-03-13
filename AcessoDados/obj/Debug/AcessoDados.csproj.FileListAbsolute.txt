@@ -14,3 +14,4 @@ D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\System.Data.S
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\System.Data.SQLite.EF6.dll
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\System.Data.SQLite.Linq.dll
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\System.Data.SQLite.xml
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\obj\Debug\AcessoDados.csproj.ResolveComReference.cache

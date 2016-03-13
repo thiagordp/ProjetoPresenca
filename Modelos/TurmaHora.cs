@@ -12,18 +12,14 @@ namespace Modelos
     using System;
     using System.Collections.Generic;
     
-    public partial class Datahora
+    public partial class TurmaHora
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Datahora()
-        {
-            this.TurmaHora = new HashSet<TurmaHora>();
-        }
-    
+        public int SEQ_DISCIPLINA_TURMA { get; set; }
         public int DIA { get; set; }
         public int HORA { get; set; }
+        public string CODIGO_ESPACO { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TurmaHora> TurmaHora { get; set; }
+        public virtual Datahora Datahora { get; set; }
+        public virtual DisciplinaTurma DisciplinaTurma { get; set; }
     }
 }
