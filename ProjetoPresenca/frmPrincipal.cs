@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetoPresenca
 {
-    public partial class Form1 : Form
+    public partial class frmPrincipal : Form
     {
-        public Form1()
+        public frmPrincipal()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace ProjetoPresenca
             RegraNegocio.MontagemRegraNegocio montagem = new RegraNegocio.MontagemRegraNegocio();
             try
             {
-                montagem.Teste();
+                
             }
             catch (Exception ex)
             {

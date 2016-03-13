@@ -10,3 +10,7 @@ D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\obj\Debug\AcessoDados.p
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\AcessoDados.dll.config
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\System.Data.SQLite.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\AcessoDados\bin\Debug\System.Data.SQLite.xml

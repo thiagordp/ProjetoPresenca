@@ -14,7 +14,6 @@ namespace RegraNegocio
         {
             try
             {
-                banco.Teste();
             }
             catch (Exception)
             {

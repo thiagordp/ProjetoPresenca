@@ -16,4 +16,6 @@ D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\EntityFra
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\AcessoDados.dll
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\EntityFramework.SqlServer.xml
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\AcessoDados.pdb
-D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\obj\Debug\ProjetoPresenca.Form1.resources
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\System.Data.SQLite.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\bin\Debug\System.Data.SQLite.xml
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\ProjetoPresenca\obj\Debug\ProjetoPresenca.frmPrincipal.resources

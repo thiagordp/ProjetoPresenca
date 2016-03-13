@@ -8,3 +8,7 @@ D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\bin\Debug\EntityFramework.S
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\obj\Debug\Modelos.dll
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\obj\Debug\Modelos.pdb
 D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\obj\Debug\Modelos.csprojResolveAssemblyReference.cache
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\bin\Debug\System.Data.SQLite.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Projetos\C#\ListaPresenca\ProjetoPresenca\Modelos\bin\Debug\System.Data.SQLite.xml
